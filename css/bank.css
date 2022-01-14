@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: hsl(275, 73%, 66%);
+    --secondary-color: hsl(0, 0%, 15%);
+    --third-color: hsl(184, 7%, 42%);
+    --accent-one: hsl(275, 100%, 83%);
+    --bg-color: white;
+}
+
+/* General Styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-size: 3em;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 5em;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    height: 75px;
+    width: 320px;
+}
+
+/* Sections */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--bg-color);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.balance-section {
+    padding: 5em;
+    height: 33.3%;
+}
+
+#balance {
+    font-weight: 400;
+}
+
+/* Coin Section */
+
+.coin-section {
+    font-size: 2em;
+    height: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin {
+    height: 120px;
+    width: 120px;
+    color: var(--bg-color);
+    background: var(--primary-color);
+    font-weight: 600;
+    margin: 0 1em; 
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background: var(--accent-one);
+}
+
+/* Button Section */
+
+.btn-section {
+    height: 33.3%; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#putBack {
+    background: var(--secondary-color);
+    margin-bottom: 0.5em;
+}
+
+#putBack:hover {
+    cursor: pointer;
+    background: var(--third-color);
+}
+
+#begin {
+    background: var(--primary-color);
+}
+
+#begin:hover {
+    cursor: pointer;
+    background: var(--third-color);
+}
+
+#reset {
+    background: var(--third-color);
+    margin-bottom: 0.5em;
+}
+
+#reset:hover {
+    cursor: pointer;
+    background: var(--primary-color);
+}
