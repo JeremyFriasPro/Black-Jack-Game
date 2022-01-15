@@ -54,9 +54,12 @@ body {
 .balance-section {
     padding: 5em;
     height: 33.3%;
+
+    display: flex;
+    justify-content: space-around;
 }
 
-#balance {
+#balance, #moneyIn {
     font-weight: 400;
 }
 
@@ -99,16 +102,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-#putBack {
-    background: var(--secondary-color);
-    margin-bottom: 0.5em;
-}
-
-#putBack:hover {
-    cursor: pointer;
-    background: var(--third-color);
 }
 
 #begin {
